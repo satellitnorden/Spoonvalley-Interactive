@@ -76,4 +76,5 @@ Plugins/*/Intermediate/*
 # Cache files for the editor to use
 DerivedDataCache/*
 
-# This is a comment.
+#Plox ignore .log files. ):
+*.log
