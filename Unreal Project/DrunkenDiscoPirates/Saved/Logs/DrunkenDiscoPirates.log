@@ -1613,3 +1613,170 @@ Script call stack:
 [2018.01.08-21.26.37:484][785]LogSavePackage: Save=39.60ms
 [2018.01.08-21.26.37:484][785]LogSavePackage: Moving '../../../../../../Users/Dennis/Documents/GitHub/Spoonvalley-Interactive/Unreal Project/DrunkenDiscoPirates/Saved/MainMenuWidget66A4DEED4972E983DEBBA3AF859E2468.tmp' to '../../../../../../Users/Dennis/Documents/GitHub/Spoonvalley-Interactive/Unreal Project/DrunkenDiscoPirates/Content/Widgets/MainMenuWidget.uasset'
 [2018.01.08-21.26.37:488][785]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Dennis/Documents/GitHub/Spoonvalley-Interactive/Unreal Project/DrunkenDiscoPirates/Content/Widgets/MainMenuWidget.uasset
+[2018.01.08-21.30.53:079][525]LogSlate: Only BGRA pngs, bmps or icos are supported in by External Image Picker
+[2018.01.08-21.30.53:153][525]LogTemp:Display: Executing iPhonePackager certificates Engine -bundlename com.YourCompany.DrunkenDiscoPirates
+
+[2018.01.08-21.30.53:153][525]LogTemp:Display: CWD: C:\Program Files\Epic Games\UE_4.15\Engine\Binaries\DotNET\IOS
+
+[2018.01.08-21.30.53:153][525]LogTemp:Display: Initial Dir: C:\Program Files\Epic Games\UE_4.15
+
+[2018.01.08-21.30.53:153][525]LogTemp:Display: Env CWD: C:\Program Files\Epic Games\UE_4.15\Engine\Binaries\DotNET\IOS
+
+[2018.01.08-21.30.53:153][525]LogTemp:Display: BranchPath = DESKTOP-417DMM2/C/Program Files/Epic Games/UE_4.15/Engine/Binaries --- GameBranchPath = DESKTOP-417DMM2/C/Program Files/Epic Games/UE_4.15/Engine/Binaries
+
+[2018.01.08-21.30.53:153][525]LogTemp:Display: IPP ERROR: Application exception: System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\Dennis\AppData\Local\Apple Computer\MobileDevice\Provisioning Profiles'.
+
+[2018.01.08-21.30.53:153][525]LogTemp:Display:    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+
+[2018.01.08-21.30.53:153][525]LogTemp:Display:    at System.IO.FileSystemEnumerableIterator`1.CommonInit()
+
+[2018.01.08-21.30.53:153][525]LogTemp:Display:    at System.IO.Directory.EnumerateFiles(String path, String searchPattern)
+
+[2018.01.08-21.30.53:153][525]LogTemp:Display:    at iPhonePackager.CodeSignatureBuilder.FindProvisions(String CFBundleIdentifier)
+
+[2018.01.08-21.30.53:153][525]LogTemp:Display:    at iPhonePackager.Program.Main(String[] args)
+
+[2018.01.08-21.31.42:479][ 69]LogTemp: Repeting last play command: Selected Viewport
+[2018.01.08-21.31.42:498][ 69]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Levels/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Levels/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2018.01.08-21.31.42:498][ 69]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.01.08-21.31.42:498][ 69]PIE: New page: PIE session: MainMenu (Jan 8, 2018, 11:31:42 PM)
+[2018.01.08-21.31.42:498][ 69]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_MainMenu
+[2018.01.08-21.31.42:500][ 69]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002331s)
+[2018.01.08-21.31.42:501][ 69]LogAIModule: Creating AISystem for world MainMenu
+[2018.01.08-21.31.42:501][ 69]LogPlayLevel: PIE: World Init took: (0.000597s)
+[2018.01.08-21.31.42:501][ 69]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/MainMenu.MainMenu to /Game/Levels/UEDPIE_0_MainMenu.MainMenu (0.003167s)
+[2018.01.08-21.31.42:530][ 69]LogInit: XAudio2 using 'Speakers (Axe-Fx II)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.01.08-21.31.42:536][ 69]LogInit: FAudioDevice initialized.
+[2018.01.08-21.31.42:565][ 69]LogLoad: Game class is 'DDPGameModeBlueprint_C'
+[2018.01.08-21.31.42:567][ 69]LogWorld: Bringing World /Game/Levels/UEDPIE_0_MainMenu.MainMenu up for play (max tick rate 0) at 2018.01.08-22.31.42
+[2018.01.08-21.31.42:567][ 69]LogWorld: Bringing up level for play took: 0.000580
+[2018.01.08-21.31.42:567][ 69]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2018.01.08-21.31.42:567][ 69]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2018.01.08-21.31.42:567][ 69]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2018.01.08-21.31.42:568][ 69]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2018.01.08-21.31.42:568][ 69]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_MainMenu 0.386
+[2018.01.08-21.31.42:569][ 69]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Levels/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Levels/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2018.01.08-21.31.42:570][ 69]LogAudio:Warning: Detected orphaned looping sound 'DrunkenDiscoPirates_MenuMusic'.
+[2018.01.08-21.31.45:272][352]LogGameMode:Display: Match State Changed from InProgress to LeavingMap
+[2018.01.08-21.31.45:272][352]LogGameState: Match State Changed from InProgress to LeavingMap
+[2018.01.08-21.31.45:273][352]LogNet: Browse: /Game/Levels/GameLevel
+[2018.01.08-21.31.45:273][352]LogLoad: LoadMap: /Game/Levels/GameLevel
+[2018.01.08-21.31.45:290][352]Cmd: MEM
+[2018.01.08-21.31.45:302][352]LogMemory: Platform Memory Stats for Windows
+[2018.01.08-21.31.45:302][352]LogMemory: Process Physical Memory: 2494.21 MB used, 2591.27 MB peak
+[2018.01.08-21.31.45:302][352]LogMemory: Process Virtual Memory: 3390.00 MB used, 3422.38 MB peak
+[2018.01.08-21.31.45:302][352]LogMemory: Physical Memory: 8765.55 MB used,  23946.38 MB free, 32711.93 MB total
+[2018.01.08-21.31.45:302][352]LogMemory: Virtual Memory: 4242.02 MB used,  23946.38 MB free, 134217728.00 MB total
+[2018.01.08-21.31.45:302][352]LogMemory: 
+[2018.01.08-21.31.45:302][352]Allocator Stats for TBB: (not implemented)
+[2018.01.08-21.31.45:811][352]LogAIModule: Creating AISystem for world GameLevel
+[2018.01.08-21.31.45:812][352]LogLoad: Game class is 'DDPGameModeBlueprint_C'
+[2018.01.08-21.31.45:824][352]LogWorld: Bringing World /Game/Levels/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2018.01.08-22.31.45
+[2018.01.08-21.31.45:825][352]LogWorld: Bringing up level for play took: 0.012062
+[2018.01.08-21.31.45:825][352]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2018.01.08-21.31.45:825][352]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2018.01.08-21.31.45:825][352]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2018.01.08-21.31.45:825][352]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2018.01.08-21.31.45:827][352]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2018.01.08-21.31.45:828][352]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2018.01.08-21.31.45:828][352]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2018.01.08-21.31.45:828][352]LogLoad: Took 0.555343 seconds to LoadMap(/Game/Levels/GameLevel)
+[2018.01.08-21.31.45:830][352]LogAudio:Warning: Detected orphaned looping sound 'DrunkenDiscoPirates_MusicLoop'.
+[2018.01.08-21.31.47:246][488]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Levels/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Levels/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2018.01.08-21.31.47:279][488]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Levels/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Levels/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2018.01.08-21.32.22:548][932]LogTemp: Repeting last play command: Selected Viewport
+[2018.01.08-21.32.22:562][932]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Levels/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Levels/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2018.01.08-21.32.22:562][932]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.01.08-21.32.22:562][932]PIE: New page: PIE session: MainMenu (Jan 8, 2018, 11:32:22 PM)
+[2018.01.08-21.32.22:562][932]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_MainMenu
+[2018.01.08-21.32.22:565][932]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002819s)
+[2018.01.08-21.32.22:565][932]LogAIModule: Creating AISystem for world MainMenu
+[2018.01.08-21.32.22:566][932]LogPlayLevel: PIE: World Init took: (0.000883s)
+[2018.01.08-21.32.22:566][932]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/MainMenu.MainMenu to /Game/Levels/UEDPIE_0_MainMenu.MainMenu (0.003932s)
+[2018.01.08-21.32.22:588][932]LogInit: XAudio2 using 'Speakers (Axe-Fx II)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.01.08-21.32.22:594][932]LogInit: FAudioDevice initialized.
+[2018.01.08-21.32.22:625][932]LogLoad: Game class is 'DDPGameModeBlueprint_C'
+[2018.01.08-21.32.22:627][932]LogWorld: Bringing World /Game/Levels/UEDPIE_0_MainMenu.MainMenu up for play (max tick rate 0) at 2018.01.08-22.32.22
+[2018.01.08-21.32.22:627][932]LogWorld: Bringing up level for play took: 0.000624
+[2018.01.08-21.32.22:627][932]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2018.01.08-21.32.22:628][932]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2018.01.08-21.32.22:628][932]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2018.01.08-21.32.22:629][932]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2018.01.08-21.32.22:629][932]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_MainMenu 0.446
+[2018.01.08-21.32.22:629][932]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Levels/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Levels/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2018.01.08-21.32.22:630][932]LogAudio:Warning: Detected orphaned looping sound 'DrunkenDiscoPirates_MenuMusic'.
+[2018.01.08-21.32.24:520][125]LogGameMode:Display: Match State Changed from InProgress to LeavingMap
+[2018.01.08-21.32.24:520][125]LogGameState: Match State Changed from InProgress to LeavingMap
+[2018.01.08-21.32.24:521][125]LogNet: Browse: /Game/Levels/GameLevel
+[2018.01.08-21.32.24:521][125]LogLoad: LoadMap: /Game/Levels/GameLevel
+[2018.01.08-21.32.24:540][125]Cmd: MEM
+[2018.01.08-21.32.24:553][125]LogMemory: Platform Memory Stats for Windows
+[2018.01.08-21.32.24:553][125]LogMemory: Process Physical Memory: 2517.17 MB used, 2591.27 MB peak
+[2018.01.08-21.32.24:553][125]LogMemory: Process Virtual Memory: 3242.82 MB used, 3431.34 MB peak
+[2018.01.08-21.32.24:553][125]LogMemory: Physical Memory: 8803.60 MB used,  23908.33 MB free, 32711.93 MB total
+[2018.01.08-21.32.24:553][125]LogMemory: Virtual Memory: 4201.39 MB used,  23908.33 MB free, 134217728.00 MB total
+[2018.01.08-21.32.24:553][125]LogMemory: 
+[2018.01.08-21.32.24:553][125]Allocator Stats for TBB: (not implemented)
+[2018.01.08-21.32.25:037][125]LogAIModule: Creating AISystem for world GameLevel
+[2018.01.08-21.32.25:037][125]LogLoad: Game class is 'DDPGameModeBlueprint_C'
+[2018.01.08-21.32.25:049][125]LogWorld: Bringing World /Game/Levels/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2018.01.08-22.32.25
+[2018.01.08-21.32.25:049][125]LogWorld: Bringing up level for play took: 0.011208
+[2018.01.08-21.32.25:049][125]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2018.01.08-21.32.25:049][125]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2018.01.08-21.32.25:049][125]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2018.01.08-21.32.25:049][125]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2018.01.08-21.32.25:051][125]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2018.01.08-21.32.25:052][125]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2018.01.08-21.32.25:052][125]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2018.01.08-21.32.25:052][125]LogLoad: Took 0.531044 seconds to LoadMap(/Game/Levels/GameLevel)
+[2018.01.08-21.32.25:054][125]LogAudio:Warning: Detected orphaned looping sound 'DrunkenDiscoPirates_MusicLoop'.
+[2018.01.08-21.32.46:769][346]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Levels/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Levels/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2018.01.08-21.32.46:802][346]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Levels/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Levels/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2018.01.08-21.33.25:201][375]LogTemp: Repeting last play command: Selected Viewport
+[2018.01.08-21.33.25:214][375]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Levels/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Levels/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2018.01.08-21.33.25:214][375]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.01.08-21.33.25:214][375]PIE: New page: PIE session: MainMenu (Jan 8, 2018, 11:33:25 PM)
+[2018.01.08-21.33.25:214][375]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_MainMenu
+[2018.01.08-21.33.25:217][375]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002721s)
+[2018.01.08-21.33.25:217][375]LogAIModule: Creating AISystem for world MainMenu
+[2018.01.08-21.33.25:218][375]LogPlayLevel: PIE: World Init took: (0.000655s)
+[2018.01.08-21.33.25:218][375]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/MainMenu.MainMenu to /Game/Levels/UEDPIE_0_MainMenu.MainMenu (0.003609s)
+[2018.01.08-21.33.25:243][375]LogInit: XAudio2 using 'Speakers (Axe-Fx II)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.01.08-21.33.25:250][375]LogInit: FAudioDevice initialized.
+[2018.01.08-21.33.25:280][375]LogLoad: Game class is 'DDPGameModeBlueprint_C'
+[2018.01.08-21.33.25:282][375]LogWorld: Bringing World /Game/Levels/UEDPIE_0_MainMenu.MainMenu up for play (max tick rate 0) at 2018.01.08-22.33.25
+[2018.01.08-21.33.25:282][375]LogWorld: Bringing up level for play took: 0.000944
+[2018.01.08-21.33.25:282][375]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2018.01.08-21.33.25:282][375]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2018.01.08-21.33.25:282][375]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2018.01.08-21.33.25:283][375]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2018.01.08-21.33.25:283][375]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_MainMenu -0.9
+[2018.01.08-21.33.25:284][375]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Levels/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Levels/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2018.01.08-21.33.25:286][375]LogAudio:Warning: Detected orphaned looping sound 'DrunkenDiscoPirates_MenuMusic'.
+[2018.01.08-21.33.27:812][629]LogGameMode:Display: Match State Changed from InProgress to LeavingMap
+[2018.01.08-21.33.27:812][629]LogGameState: Match State Changed from InProgress to LeavingMap
+[2018.01.08-21.33.27:812][629]LogNet: Browse: /Game/Levels/GameLevel
+[2018.01.08-21.33.27:812][629]LogLoad: LoadMap: /Game/Levels/GameLevel
+[2018.01.08-21.33.27:827][629]Cmd: MEM
+[2018.01.08-21.33.27:844][629]LogMemory: Platform Memory Stats for Windows
+[2018.01.08-21.33.27:844][629]LogMemory: Process Physical Memory: 2517.98 MB used, 2591.27 MB peak
+[2018.01.08-21.33.27:844][629]LogMemory: Process Virtual Memory: 3254.09 MB used, 3431.34 MB peak
+[2018.01.08-21.33.27:844][629]LogMemory: Physical Memory: 8766.91 MB used,  23945.02 MB free, 32711.93 MB total
+[2018.01.08-21.33.27:844][629]LogMemory: Virtual Memory: 4207.77 MB used,  23945.02 MB free, 134217728.00 MB total
+[2018.01.08-21.33.27:844][629]LogMemory: 
+[2018.01.08-21.33.27:844][629]Allocator Stats for TBB: (not implemented)
+[2018.01.08-21.33.28:329][629]LogAIModule: Creating AISystem for world GameLevel
+[2018.01.08-21.33.28:330][629]LogLoad: Game class is 'DDPGameModeBlueprint_C'
+[2018.01.08-21.33.28:343][629]LogWorld: Bringing World /Game/Levels/UEDPIE_0_GameLevel.GameLevel up for play (max tick rate 0) at 2018.01.08-22.33.28
+[2018.01.08-21.33.28:344][629]LogWorld: Bringing up level for play took: 0.013066
+[2018.01.08-21.33.28:344][629]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2018.01.08-21.33.28:344][629]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2018.01.08-21.33.28:344][629]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2018.01.08-21.33.28:344][629]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2018.01.08-21.33.28:346][629]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2018.01.08-21.33.28:348][629]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2018.01.08-21.33.28:348][629]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2018.01.08-21.33.28:348][629]LogLoad: Took 0.536266 seconds to LoadMap(/Game/Levels/GameLevel)
+[2018.01.08-21.33.28:350][629]LogAudio:Warning: Detected orphaned looping sound 'DrunkenDiscoPirates_MusicLoop'.
+[2018.01.08-21.33.37:248][498]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Levels/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Levels/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2018.01.08-21.33.37:281][498]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Levels/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Levels/MainMenu.MainMenu:PersistentLevel.MainMenu'
