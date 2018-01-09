@@ -27,6 +27,20 @@ class DRUNKENDISCOPIRATES_API ADiscoPirate : public ACharacter
 {
 	GENERATED_BODY()
 
+public:
+
+	//Move vertically.
+	UFUNCTION(BlueprintCallable, Category = "Code")
+	void MoveVertical(float value);
+
+	//Initiate an attack.
+	UFUNCTION(BlueprintCallable, Category = "Code")
+	void InitiateAttack();
+
+	//Initiate a jump.
+	UFUNCTION(BlueprintCallable, Category = "Code")
+	void InitiateJump();
+
 private:
 
 	//The paper flipbook component.
@@ -36,10 +50,6 @@ private:
 	//The box collision component (used for melee attacks).
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = true), Category = "Components")
 	UBoxComponent *attackBox;
-
-	/*
-	*
-	*/
 
 	//The current state that the pirate is in.
 	States currentState;
@@ -65,24 +75,11 @@ private:
 	//Keeps track of how long the pirate has been stunned.
 	float stunTimer;
 
-	/*
-	*
-	*/
-
 	//Update the animation.
 	void UpdateAnimation();
 
-	//Move vertically.
-	void MoveVertical(float value);
-
-	//Initiate an attack.
-	void InitiateAttack();
-
 	//Perform an attack.
 	void PerformAttack();
-
-	//Initiate a jump.
-	void InitiateJump();
 
 	//Called on begin overlap.
 	UFUNCTION()

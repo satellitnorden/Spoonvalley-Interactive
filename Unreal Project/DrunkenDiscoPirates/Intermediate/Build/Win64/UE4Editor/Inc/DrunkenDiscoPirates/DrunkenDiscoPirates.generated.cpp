@@ -54,6 +54,9 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_States(States_StaticEnum
 	void ADiscoPirate::StaticRegisterNativesADiscoPirate()
 	{
 		FNativeFunctionRegistrar::RegisterFunction(ADiscoPirate::StaticClass(), "Attack",(Native)&ADiscoPirate::execAttack);
+		FNativeFunctionRegistrar::RegisterFunction(ADiscoPirate::StaticClass(), "InitiateAttack",(Native)&ADiscoPirate::execInitiateAttack);
+		FNativeFunctionRegistrar::RegisterFunction(ADiscoPirate::StaticClass(), "InitiateJump",(Native)&ADiscoPirate::execInitiateJump);
+		FNativeFunctionRegistrar::RegisterFunction(ADiscoPirate::StaticClass(), "MoveVertical",(Native)&ADiscoPirate::execMoveVertical);
 		FNativeFunctionRegistrar::RegisterFunction(ADiscoPirate::StaticClass(), "OnAnimationFinished",(Native)&ADiscoPirate::execOnAnimationFinished);
 		FNativeFunctionRegistrar::RegisterFunction(ADiscoPirate::StaticClass(), "OnBeginOverlap",(Native)&ADiscoPirate::execOnBeginOverlap);
 		FNativeFunctionRegistrar::RegisterFunction(ADiscoPirate::StaticClass(), "OnEndOverlap",(Native)&ADiscoPirate::execOnEndOverlap);
@@ -62,7 +65,7 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_States(States_StaticEnum
 		FNativeFunctionRegistrar::RegisterFunction(ADiscoPirate::StaticClass(), "PickUpRum",(Native)&ADiscoPirate::execPickUpRum);
 		FNativeFunctionRegistrar::RegisterFunction(ADiscoPirate::StaticClass(), "SetFlipbooksImplementation",(Native)&ADiscoPirate::execSetFlipbooksImplementation);
 	}
-	IMPLEMENT_CLASS(ADiscoPirate, 1426623029);
+	IMPLEMENT_CLASS(ADiscoPirate, 1900825474);
 	void ADDPGameMode::StaticRegisterNativesADDPGameMode()
 	{
 		FNativeFunctionRegistrar::RegisterFunction(ADDPGameMode::StaticClass(), "CreatePlayers",(Native)&ADDPGameMode::execCreatePlayers);
@@ -102,6 +105,9 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_States(States_StaticEnum
 	DRUNKENDISCOPIRATES_API class UEnum* Z_Construct_UEnum_DrunkenDiscoPirates_States();
 	DRUNKENDISCOPIRATES_API class UFunction* Z_Construct_UFunction_ADiscoPirate_Attack();
 	DRUNKENDISCOPIRATES_API class UFunction* Z_Construct_UFunction_ADiscoPirate_DamagedFallback();
+	DRUNKENDISCOPIRATES_API class UFunction* Z_Construct_UFunction_ADiscoPirate_InitiateAttack();
+	DRUNKENDISCOPIRATES_API class UFunction* Z_Construct_UFunction_ADiscoPirate_InitiateJump();
+	DRUNKENDISCOPIRATES_API class UFunction* Z_Construct_UFunction_ADiscoPirate_MoveVertical();
 	DRUNKENDISCOPIRATES_API class UFunction* Z_Construct_UFunction_ADiscoPirate_OnAnimationFinished();
 	DRUNKENDISCOPIRATES_API class UFunction* Z_Construct_UFunction_ADiscoPirate_OnBeginOverlap();
 	DRUNKENDISCOPIRATES_API class UFunction* Z_Construct_UFunction_ADiscoPirate_OnEndOverlap();
@@ -366,6 +372,65 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 		}
 		return ReturnFunction;
 	}
+	UFunction* Z_Construct_UFunction_ADiscoPirate_InitiateAttack()
+	{
+		UObject* Outer=Z_Construct_UClass_ADiscoPirate();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("InitiateAttack"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Code"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("DiscoPirate.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Initiate an attack."));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ADiscoPirate_InitiateJump()
+	{
+		UObject* Outer=Z_Construct_UClass_ADiscoPirate();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("InitiateJump"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Code"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("DiscoPirate.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Initiate a jump."));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ADiscoPirate_MoveVertical()
+	{
+		struct DiscoPirate_eventMoveVertical_Parms
+		{
+			float value;
+		};
+		UObject* Outer=Z_Construct_UClass_ADiscoPirate();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("MoveVertical"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535, sizeof(DiscoPirate_eventMoveVertical_Parms));
+			UProperty* NewProp_value = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("value"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(value, DiscoPirate_eventMoveVertical_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Code"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("DiscoPirate.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Move vertically."));
+#endif
+		}
+		return ReturnFunction;
+	}
 	UFunction* Z_Construct_UFunction_ADiscoPirate_OnAnimationFinished()
 	{
 		UObject* Outer=Z_Construct_UClass_ADiscoPirate();
@@ -592,6 +657,9 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 				OuterClass->LinkChild(Z_Construct_UFunction_ADiscoPirate_Attack());
 				OuterClass->LinkChild(Z_Construct_UFunction_ADiscoPirate_DamagedFallback());
+				OuterClass->LinkChild(Z_Construct_UFunction_ADiscoPirate_InitiateAttack());
+				OuterClass->LinkChild(Z_Construct_UFunction_ADiscoPirate_InitiateJump());
+				OuterClass->LinkChild(Z_Construct_UFunction_ADiscoPirate_MoveVertical());
 				OuterClass->LinkChild(Z_Construct_UFunction_ADiscoPirate_OnAnimationFinished());
 				OuterClass->LinkChild(Z_Construct_UFunction_ADiscoPirate_OnBeginOverlap());
 				OuterClass->LinkChild(Z_Construct_UFunction_ADiscoPirate_OnEndOverlap());
@@ -629,6 +697,9 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ADiscoPirate_Attack(), "Attack"); // 1708424139
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ADiscoPirate_DamagedFallback(), "DamagedFallback"); // 1040536844
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ADiscoPirate_InitiateAttack(), "InitiateAttack"); // 3989609359
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ADiscoPirate_InitiateJump(), "InitiateJump"); // 3536455539
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ADiscoPirate_MoveVertical(), "MoveVertical"); // 2247390805
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ADiscoPirate_OnAnimationFinished(), "OnAnimationFinished"); // 580161796
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ADiscoPirate_OnBeginOverlap(), "OnBeginOverlap"); // 3794176916
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ADiscoPirate_OnEndOverlap(), "OnEndOverlap"); // 3250412170
@@ -837,8 +908,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/DrunkenDiscoPirates")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x8029D735;
-			Guid.B = 0x48EB01E0;
+			Guid.A = 0x4B03427F;
+			Guid.B = 0xEE4F642B;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

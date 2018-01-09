@@ -103,6 +103,31 @@ struct FHitResult;
 		P_NATIVE_BEGIN; \
 		this->OnBeginOverlap(Z_Param_OverlappedComponent,Z_Param_OtherActor,Z_Param_OtherComp,Z_Param_OtherBodyIndex,Z_Param_bFromSweep,Z_Param_Out_SweepResult); \
 		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execInitiateJump) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->InitiateJump(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execInitiateAttack) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->InitiateAttack(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execMoveVertical) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->MoveVertical(Z_Param_value); \
+		P_NATIVE_END; \
 	}
 
 
@@ -193,6 +218,31 @@ struct FHitResult;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		this->OnBeginOverlap(Z_Param_OverlappedComponent,Z_Param_OtherActor,Z_Param_OtherComp,Z_Param_OtherBodyIndex,Z_Param_bFromSweep,Z_Param_Out_SweepResult); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execInitiateJump) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->InitiateJump(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execInitiateAttack) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->InitiateAttack(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execMoveVertical) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->MoveVertical(Z_Param_value); \
 		P_NATIVE_END; \
 	}
 

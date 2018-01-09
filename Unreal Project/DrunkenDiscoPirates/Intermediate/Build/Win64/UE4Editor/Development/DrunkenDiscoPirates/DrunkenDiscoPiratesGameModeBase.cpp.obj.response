@@ -23,9 +23,9 @@
 /wd4838
 /w44668
 /I "C:\Program Files\Epic Games\UE_4.15\Engine\Source"
-/I "C:\Users\Dennis\Desktop\Unreal Project\DrunkenDiscoPirates\Source"
-/I "C:\Users\Dennis\Desktop\Unreal Project\DrunkenDiscoPirates\Intermediate\Build\Win64\UE4Editor\Inc\DrunkenDiscoPirates"
-/I "C:\Users\Dennis\Desktop\Unreal Project\DrunkenDiscoPirates\Source\DrunkenDiscoPirates"
+/I "C:\Users\Dennis\Documents\GitHub\Spoonvalley-Interactive\Unreal Project\DrunkenDiscoPirates\Source"
+/I "C:\Users\Dennis\Documents\GitHub\Spoonvalley-Interactive\Unreal Project\DrunkenDiscoPirates\Intermediate\Build\Win64\UE4Editor\Inc\DrunkenDiscoPirates"
+/I "C:\Users\Dennis\Documents\GitHub\Spoonvalley-Interactive\Unreal Project\DrunkenDiscoPirates\Source\DrunkenDiscoPirates"
 /I "C:\Program Files\Epic Games\UE_4.15\Engine\Source\Runtime\Core\Public"
 /I "C:\Program Files\Epic Games\UE_4.15\Engine\Source\Runtime\Core\Public\Internationalization"
 /I "C:\Program Files\Epic Games\UE_4.15\Engine\Source\Runtime\Core\Public\Async"
@@ -307,11 +307,11 @@
 /I "C:\Program Files\Epic Games\UE_4.15\Engine\Plugins\2D\Paper2D\Source\Paper2D\Public"
 /I "C:\Program Files\Epic Games\UE_4.15\Engine\Plugins\2D\Paper2D\Intermediate\Build\Win64\UE4Editor\Inc\Paper2D"
 /I "C:\Program Files\Epic Games\UE_4.15\Engine\Plugins\2D\Paper2D\Source\Paper2D"
-/FI"C:\Users\Dennis\Desktop\Unreal Project\DrunkenDiscoPirates\Source\DrunkenDiscoPirates\DrunkenDiscoPirates.h"
-/Yu"C:\Users\Dennis\Desktop\Unreal Project\DrunkenDiscoPirates\Source\DrunkenDiscoPirates\DrunkenDiscoPirates.h"
-/Fp"C:\Users\Dennis\Desktop\Unreal Project\DrunkenDiscoPirates\Intermediate\Build\Win64\UE4Editor\Development\DrunkenDiscoPirates\PCH.DrunkenDiscoPirates.h.pch"
-"C:\Users\Dennis\Desktop\Unreal Project\DrunkenDiscoPirates\Source\DrunkenDiscoPirates\DrunkenDiscoPiratesGameModeBase.cpp"
-/Fo"C:\Users\Dennis\Desktop\Unreal Project\DrunkenDiscoPirates\Intermediate\Build\Win64\UE4Editor\Development\DrunkenDiscoPirates\DrunkenDiscoPiratesGameModeBase.cpp.obj"
+/FI"C:\Users\Dennis\Documents\GitHub\Spoonvalley-Interactive\Unreal Project\DrunkenDiscoPirates\Source\DrunkenDiscoPirates\DrunkenDiscoPirates.h"
+/Yu"C:\Users\Dennis\Documents\GitHub\Spoonvalley-Interactive\Unreal Project\DrunkenDiscoPirates\Source\DrunkenDiscoPirates\DrunkenDiscoPirates.h"
+/Fp"C:\Users\Dennis\Documents\GitHub\Spoonvalley-Interactive\Unreal Project\DrunkenDiscoPirates\Intermediate\Build\Win64\UE4Editor\Development\DrunkenDiscoPirates\PCH.DrunkenDiscoPirates.h.pch"
+"C:\Users\Dennis\Documents\GitHub\Spoonvalley-Interactive\Unreal Project\DrunkenDiscoPirates\Source\DrunkenDiscoPirates\DrunkenDiscoPiratesGameModeBase.cpp"
+/Fo"C:\Users\Dennis\Documents\GitHub\Spoonvalley-Interactive\Unreal Project\DrunkenDiscoPirates\Intermediate\Build\Win64\UE4Editor\Development\DrunkenDiscoPirates\DrunkenDiscoPiratesGameModeBase.cpp.obj"
 /TP
 /GR-
 /W4

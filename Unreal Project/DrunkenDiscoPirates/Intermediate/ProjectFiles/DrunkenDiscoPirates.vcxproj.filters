@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
-<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 	<ItemGroup>
 		<None Include="..\..\DrunkenDiscoPirates.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{E1EA6503-D2A8-4D5E-A41D-99AACE69EE3D}</UniqueIdentifier>
+			<UniqueIdentifier>{B542DC33-55EF-4B7B-83B8-E0EF73A958DE}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\DrunkenDiscoPirates.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{E192FC24-3C3F-4DA9-8CA8-1F996E86ECF2}</UniqueIdentifier>
+			<UniqueIdentifier>{B4180254-40F4-414A-8B20-9914CDB6A2C7}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -31,7 +31,7 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\DrunkenDiscoPirates">
-			<UniqueIdentifier>{565B5EBE-5EC9-4074-9376-CBC860261196}</UniqueIdentifier>
+			<UniqueIdentifier>{176504ED-67B8-4213-8BF4-70C2F9D69B8B}</UniqueIdentifier>
 		</Filter>
 		<ClCompile Include="..\..\Source\DrunkenDiscoPirates\Camera.cpp">
 			<Filter>Source\DrunkenDiscoPirates</Filter>
