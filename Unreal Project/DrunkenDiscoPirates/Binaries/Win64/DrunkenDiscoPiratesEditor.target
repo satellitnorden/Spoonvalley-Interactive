@@ -2,7 +2,7 @@
 	"TargetName" : "DrunkenDiscoPiratesEditor",
 	"Platform" : "Win64",
 	"Configuration" : "Development",
-	"BuildId" : "",
+	"BuildId" : "aaa0feab-8021-40ce-860b-d15bbe29ea28",
 	"Version" : 
 	{
 		"MajorVersion" : 4,
@@ -17,15 +17,15 @@
 	"BuildProducts" :
 	[
 		{
-			"Path" : "$(ProjectDir)/Binaries/Win64/UE4Editor-DrunkenDiscoPirates.dll",
+			"Path" : "$(ProjectDir)/Binaries/Win64/UE4Editor-DrunkenDiscoPirates-4642.dll",
 			"Type" : "DynamicLibrary"
 		},
 		{
-			"Path" : "$(ProjectDir)/Binaries/Win64/UE4Editor-DrunkenDiscoPirates.pdb",
+			"Path" : "$(ProjectDir)/Binaries/Win64/UE4Editor-DrunkenDiscoPirates-4642.pdb",
 			"Type" : "SymbolFile"
 		},
 		{
-			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-DrunkenDiscoPirates.lib",
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-DrunkenDiscoPirates-4642.lib",
 			"Type" : "ImportLibrary"
 		},
 		{

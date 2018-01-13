@@ -13,6 +13,16 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define DrunkenDiscoPirates_Source_DrunkenDiscoPirates_Camera_h_11_RPC_WRAPPERS
 #define DrunkenDiscoPirates_Source_DrunkenDiscoPirates_Camera_h_11_RPC_WRAPPERS_NO_PURE_DECLS
+#define DrunkenDiscoPirates_Source_DrunkenDiscoPirates_Camera_h_11_EVENT_PARMS \
+	struct Camera_eventFillRumMeter_Parms \
+	{ \
+		int32 playerIndex; \
+		float deltaTime; \
+	};
+
+
+extern DRUNKENDISCOPIRATES_API  FName DRUNKENDISCOPIRATES_FillRumMeter;
+#define DrunkenDiscoPirates_Source_DrunkenDiscoPirates_Camera_h_11_CALLBACK_WRAPPERS
 #define DrunkenDiscoPirates_Source_DrunkenDiscoPirates_Camera_h_11_INCLASS_NO_PURE_DECLS \
 	private: \
 	static void StaticRegisterNativesACamera(); \
@@ -63,12 +73,16 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ACamera); \
 	FORCEINLINE static uint32 __PPO__camera() { return STRUCT_OFFSET(ACamera, camera); }
 
 
-#define DrunkenDiscoPirates_Source_DrunkenDiscoPirates_Camera_h_8_PROLOG
+#define DrunkenDiscoPirates_Source_DrunkenDiscoPirates_Camera_h_8_PROLOG \
+	DrunkenDiscoPirates_Source_DrunkenDiscoPirates_Camera_h_11_EVENT_PARMS
+
+
 #define DrunkenDiscoPirates_Source_DrunkenDiscoPirates_Camera_h_11_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	DrunkenDiscoPirates_Source_DrunkenDiscoPirates_Camera_h_11_PRIVATE_PROPERTY_OFFSET \
 	DrunkenDiscoPirates_Source_DrunkenDiscoPirates_Camera_h_11_RPC_WRAPPERS \
+	DrunkenDiscoPirates_Source_DrunkenDiscoPirates_Camera_h_11_CALLBACK_WRAPPERS \
 	DrunkenDiscoPirates_Source_DrunkenDiscoPirates_Camera_h_11_INCLASS \
 	DrunkenDiscoPirates_Source_DrunkenDiscoPirates_Camera_h_11_STANDARD_CONSTRUCTORS \
 public: \
@@ -80,6 +94,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	DrunkenDiscoPirates_Source_DrunkenDiscoPirates_Camera_h_11_PRIVATE_PROPERTY_OFFSET \
 	DrunkenDiscoPirates_Source_DrunkenDiscoPirates_Camera_h_11_RPC_WRAPPERS_NO_PURE_DECLS \
+	DrunkenDiscoPirates_Source_DrunkenDiscoPirates_Camera_h_11_CALLBACK_WRAPPERS \
 	DrunkenDiscoPirates_Source_DrunkenDiscoPirates_Camera_h_11_INCLASS_NO_PURE_DECLS \
 	DrunkenDiscoPirates_Source_DrunkenDiscoPirates_Camera_h_11_ENHANCED_CONSTRUCTORS \
 private: \

@@ -1,4 +1,4 @@
-// © Copyright Chrysalis Interactive 2017.
+// © Copyright Spoonvalley Interactive 2018.
 
 #pragma once
 
@@ -29,4 +29,9 @@ public:
 
 	//Called to bind functionality to input.
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+	//Called to fill up the rum meter for a specific player.
+	UFUNCTION(BlueprintImplementableEvent, Category = "Code")
+	void FillRumMeter(int32 playerIndex, float deltaTime);
+
 };

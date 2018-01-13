@@ -1,7 +1,8 @@
-// © Copyright Chrysalis Interactive 2017.
+// © Copyright Spoonvalley Interactive 2018.
 
 #include "DrunkenDiscoPirates.h"
 #include "DiscoPirate.h"
+#include "Camera.h"
 
 //Update the animation.
 void ADiscoPirate::UpdateAnimation()
@@ -277,6 +278,11 @@ void ADiscoPirate::BeginPlay()
 	skvalpAudio = UGameplayStatics::SpawnSoundAtLocation(this, skvalpSound, GetActorLocation());
 	skvalpAudio->Deactivate();
 	skvalpAudio->bAutoDestroy = false;
+
+	//Retrieve the reference to the camera.
+	TArray<AActor*> cameraActors;
+	UGameplayStatics::GetAllActorsOfClass(this, ACamera::StaticClass(), cameraActors);
+	camera = Cast<ACamera>(cameraActors[0]);
 }
 
 //Called every frame.
@@ -409,6 +415,9 @@ void ADiscoPirate::Tick(float DeltaTime)
 				break;
 			}
 		}
+
+		//Also, fill this player's rum meter.
+		camera->FillRumMeter(uniquePlayerIndex, DeltaTime);
 	}
 }
 

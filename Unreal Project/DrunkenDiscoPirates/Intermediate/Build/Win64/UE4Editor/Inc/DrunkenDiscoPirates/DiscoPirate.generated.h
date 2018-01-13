@@ -15,7 +15,7 @@ struct FHitResult;
 #endif
 #define DRUNKENDISCOPIRATES_DiscoPirate_generated_h
 
-#define DrunkenDiscoPirates_Source_DrunkenDiscoPirates_DiscoPirate_h_28_RPC_WRAPPERS \
+#define DrunkenDiscoPirates_Source_DrunkenDiscoPirates_DiscoPirate_h_31_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execAttack) \
 	{ \
@@ -131,7 +131,7 @@ struct FHitResult;
 	}
 
 
-#define DrunkenDiscoPirates_Source_DrunkenDiscoPirates_DiscoPirate_h_28_RPC_WRAPPERS_NO_PURE_DECLS \
+#define DrunkenDiscoPirates_Source_DrunkenDiscoPirates_DiscoPirate_h_31_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execAttack) \
 	{ \
@@ -247,7 +247,7 @@ struct FHitResult;
 	}
 
 
-#define DrunkenDiscoPirates_Source_DrunkenDiscoPirates_DiscoPirate_h_28_EVENT_PARMS \
+#define DrunkenDiscoPirates_Source_DrunkenDiscoPirates_DiscoPirate_h_31_EVENT_PARMS \
 	struct DiscoPirate_eventDamagedFallback_Parms \
 	{ \
 		AActor* attackingPirate; \
@@ -260,8 +260,8 @@ struct FHitResult;
 
 extern DRUNKENDISCOPIRATES_API  FName DRUNKENDISCOPIRATES_DamagedFallback;
 extern DRUNKENDISCOPIRATES_API  FName DRUNKENDISCOPIRATES_SetFlipbooks;
-#define DrunkenDiscoPirates_Source_DrunkenDiscoPirates_DiscoPirate_h_28_CALLBACK_WRAPPERS
-#define DrunkenDiscoPirates_Source_DrunkenDiscoPirates_DiscoPirate_h_28_INCLASS_NO_PURE_DECLS \
+#define DrunkenDiscoPirates_Source_DrunkenDiscoPirates_DiscoPirate_h_31_CALLBACK_WRAPPERS
+#define DrunkenDiscoPirates_Source_DrunkenDiscoPirates_DiscoPirate_h_31_INCLASS_NO_PURE_DECLS \
 	private: \
 	static void StaticRegisterNativesADiscoPirate(); \
 	friend DRUNKENDISCOPIRATES_API class UClass* Z_Construct_UClass_ADiscoPirate(); \
@@ -272,7 +272,7 @@ extern DRUNKENDISCOPIRATES_API  FName DRUNKENDISCOPIRATES_SetFlipbooks;
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define DrunkenDiscoPirates_Source_DrunkenDiscoPirates_DiscoPirate_h_28_INCLASS \
+#define DrunkenDiscoPirates_Source_DrunkenDiscoPirates_DiscoPirate_h_31_INCLASS \
 	private: \
 	static void StaticRegisterNativesADiscoPirate(); \
 	friend DRUNKENDISCOPIRATES_API class UClass* Z_Construct_UClass_ADiscoPirate(); \
@@ -283,7 +283,7 @@ extern DRUNKENDISCOPIRATES_API  FName DRUNKENDISCOPIRATES_SetFlipbooks;
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define DrunkenDiscoPirates_Source_DrunkenDiscoPirates_DiscoPirate_h_28_STANDARD_CONSTRUCTORS \
+#define DrunkenDiscoPirates_Source_DrunkenDiscoPirates_DiscoPirate_h_31_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ADiscoPirate(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ADiscoPirate) \
@@ -296,7 +296,7 @@ private: \
 public:
 
 
-#define DrunkenDiscoPirates_Source_DrunkenDiscoPirates_DiscoPirate_h_28_ENHANCED_CONSTRUCTORS \
+#define DrunkenDiscoPirates_Source_DrunkenDiscoPirates_DiscoPirate_h_31_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ADiscoPirate(ADiscoPirate&&); \
@@ -307,9 +307,10 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ADiscoPirate); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ADiscoPirate)
 
 
-#define DrunkenDiscoPirates_Source_DrunkenDiscoPirates_DiscoPirate_h_28_PRIVATE_PROPERTY_OFFSET \
+#define DrunkenDiscoPirates_Source_DrunkenDiscoPirates_DiscoPirate_h_31_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__flipbook() { return STRUCT_OFFSET(ADiscoPirate, flipbook); } \
 	FORCEINLINE static uint32 __PPO__attackBox() { return STRUCT_OFFSET(ADiscoPirate, attackBox); } \
+	FORCEINLINE static uint32 __PPO__uniquePlayerIndex() { return STRUCT_OFFSET(ADiscoPirate, uniquePlayerIndex); } \
 	FORCEINLINE static uint32 __PPO__rumBottleClass() { return STRUCT_OFFSET(ADiscoPirate, rumBottleClass); } \
 	FORCEINLINE static uint32 __PPO__levelYBoundary() { return STRUCT_OFFSET(ADiscoPirate, levelYBoundary); } \
 	FORCEINLINE static uint32 __PPO__levelZBoundary() { return STRUCT_OFFSET(ADiscoPirate, levelZBoundary); } \
@@ -334,30 +335,30 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ADiscoPirate); \
 	FORCEINLINE static uint32 __PPO__pickupBottleSound() { return STRUCT_OFFSET(ADiscoPirate, pickupBottleSound); }
 
 
-#define DrunkenDiscoPirates_Source_DrunkenDiscoPirates_DiscoPirate_h_25_PROLOG \
-	DrunkenDiscoPirates_Source_DrunkenDiscoPirates_DiscoPirate_h_28_EVENT_PARMS
+#define DrunkenDiscoPirates_Source_DrunkenDiscoPirates_DiscoPirate_h_28_PROLOG \
+	DrunkenDiscoPirates_Source_DrunkenDiscoPirates_DiscoPirate_h_31_EVENT_PARMS
 
 
-#define DrunkenDiscoPirates_Source_DrunkenDiscoPirates_DiscoPirate_h_28_GENERATED_BODY_LEGACY \
+#define DrunkenDiscoPirates_Source_DrunkenDiscoPirates_DiscoPirate_h_31_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	DrunkenDiscoPirates_Source_DrunkenDiscoPirates_DiscoPirate_h_28_PRIVATE_PROPERTY_OFFSET \
-	DrunkenDiscoPirates_Source_DrunkenDiscoPirates_DiscoPirate_h_28_RPC_WRAPPERS \
-	DrunkenDiscoPirates_Source_DrunkenDiscoPirates_DiscoPirate_h_28_CALLBACK_WRAPPERS \
-	DrunkenDiscoPirates_Source_DrunkenDiscoPirates_DiscoPirate_h_28_INCLASS \
-	DrunkenDiscoPirates_Source_DrunkenDiscoPirates_DiscoPirate_h_28_STANDARD_CONSTRUCTORS \
+	DrunkenDiscoPirates_Source_DrunkenDiscoPirates_DiscoPirate_h_31_PRIVATE_PROPERTY_OFFSET \
+	DrunkenDiscoPirates_Source_DrunkenDiscoPirates_DiscoPirate_h_31_RPC_WRAPPERS \
+	DrunkenDiscoPirates_Source_DrunkenDiscoPirates_DiscoPirate_h_31_CALLBACK_WRAPPERS \
+	DrunkenDiscoPirates_Source_DrunkenDiscoPirates_DiscoPirate_h_31_INCLASS \
+	DrunkenDiscoPirates_Source_DrunkenDiscoPirates_DiscoPirate_h_31_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define DrunkenDiscoPirates_Source_DrunkenDiscoPirates_DiscoPirate_h_28_GENERATED_BODY \
+#define DrunkenDiscoPirates_Source_DrunkenDiscoPirates_DiscoPirate_h_31_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	DrunkenDiscoPirates_Source_DrunkenDiscoPirates_DiscoPirate_h_28_PRIVATE_PROPERTY_OFFSET \
-	DrunkenDiscoPirates_Source_DrunkenDiscoPirates_DiscoPirate_h_28_RPC_WRAPPERS_NO_PURE_DECLS \
-	DrunkenDiscoPirates_Source_DrunkenDiscoPirates_DiscoPirate_h_28_CALLBACK_WRAPPERS \
-	DrunkenDiscoPirates_Source_DrunkenDiscoPirates_DiscoPirate_h_28_INCLASS_NO_PURE_DECLS \
-	DrunkenDiscoPirates_Source_DrunkenDiscoPirates_DiscoPirate_h_28_ENHANCED_CONSTRUCTORS \
+	DrunkenDiscoPirates_Source_DrunkenDiscoPirates_DiscoPirate_h_31_PRIVATE_PROPERTY_OFFSET \
+	DrunkenDiscoPirates_Source_DrunkenDiscoPirates_DiscoPirate_h_31_RPC_WRAPPERS_NO_PURE_DECLS \
+	DrunkenDiscoPirates_Source_DrunkenDiscoPirates_DiscoPirate_h_31_CALLBACK_WRAPPERS \
+	DrunkenDiscoPirates_Source_DrunkenDiscoPirates_DiscoPirate_h_31_INCLASS_NO_PURE_DECLS \
+	DrunkenDiscoPirates_Source_DrunkenDiscoPirates_DiscoPirate_h_31_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

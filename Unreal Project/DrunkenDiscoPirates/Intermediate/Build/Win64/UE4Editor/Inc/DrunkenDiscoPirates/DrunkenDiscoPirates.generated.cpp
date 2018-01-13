@@ -12,11 +12,19 @@ PRAGMA_DISABLE_OPTIMIZATION
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCode1DrunkenDiscoPirates() {}
 FName DRUNKENDISCOPIRATES_DamagedFallback = FName(TEXT("DamagedFallback"));
+FName DRUNKENDISCOPIRATES_FillRumMeter = FName(TEXT("FillRumMeter"));
 FName DRUNKENDISCOPIRATES_SetFlipbooks = FName(TEXT("SetFlipbooks"));
+	void ACamera::FillRumMeter(int32 playerIndex, float deltaTime)
+	{
+		Camera_eventFillRumMeter_Parms Parms;
+		Parms.playerIndex=playerIndex;
+		Parms.deltaTime=deltaTime;
+		ProcessEvent(FindFunctionChecked(DRUNKENDISCOPIRATES_FillRumMeter),&Parms);
+	}
 	void ACamera::StaticRegisterNativesACamera()
 	{
 	}
-	IMPLEMENT_CLASS(ACamera, 2509188529);
+	IMPLEMENT_CLASS(ACamera, 2357816729);
 	void UDDPGameInstance::StaticRegisterNativesUDDPGameInstance()
 	{
 		FNativeFunctionRegistrar::RegisterFunction(UDDPGameInstance::StaticClass(), "GetPlayerCount",(Native)&UDDPGameInstance::execGetPlayerCount);
@@ -65,7 +73,7 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_States(States_StaticEnum
 		FNativeFunctionRegistrar::RegisterFunction(ADiscoPirate::StaticClass(), "PickUpRum",(Native)&ADiscoPirate::execPickUpRum);
 		FNativeFunctionRegistrar::RegisterFunction(ADiscoPirate::StaticClass(), "SetFlipbooksImplementation",(Native)&ADiscoPirate::execSetFlipbooksImplementation);
 	}
-	IMPLEMENT_CLASS(ADiscoPirate, 1900825474);
+	IMPLEMENT_CLASS(ADiscoPirate, 2003445645);
 	void ADDPGameMode::StaticRegisterNativesADDPGameMode()
 	{
 		FNativeFunctionRegistrar::RegisterFunction(ADDPGameMode::StaticClass(), "CreatePlayers",(Native)&ADDPGameMode::execCreatePlayers);
@@ -94,6 +102,7 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_States(States_StaticEnum
 	COREUOBJECT_API class UScriptStruct* Z_Construct_UScriptStruct_FTransform();
 	ENGINE_API class UClass* Z_Construct_UClass_AGameModeBase();
 
+	DRUNKENDISCOPIRATES_API class UFunction* Z_Construct_UFunction_ACamera_FillRumMeter();
 	DRUNKENDISCOPIRATES_API class UClass* Z_Construct_UClass_ACamera_NoRegister();
 	DRUNKENDISCOPIRATES_API class UClass* Z_Construct_UClass_ACamera();
 	DRUNKENDISCOPIRATES_API class UFunction* Z_Construct_UFunction_UDDPGameInstance_GetPlayerCount();
@@ -124,6 +133,26 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_States(States_StaticEnum
 	DRUNKENDISCOPIRATES_API class UClass* Z_Construct_UClass_ADrunkenDiscoPiratesGameModeBase_NoRegister();
 	DRUNKENDISCOPIRATES_API class UClass* Z_Construct_UClass_ADrunkenDiscoPiratesGameModeBase();
 	DRUNKENDISCOPIRATES_API class UPackage* Z_Construct_UPackage__Script_DrunkenDiscoPirates();
+	UFunction* Z_Construct_UFunction_ACamera_FillRumMeter()
+	{
+		UObject* Outer=Z_Construct_UClass_ACamera();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("FillRumMeter"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08020800, 65535, sizeof(Camera_eventFillRumMeter_Parms));
+			UProperty* NewProp_deltaTime = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("deltaTime"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(deltaTime, Camera_eventFillRumMeter_Parms), 0x0010000000000080);
+			UProperty* NewProp_playerIndex = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("playerIndex"), RF_Public|RF_Transient|RF_MarkAsNative) UIntProperty(CPP_PROPERTY_BASE(playerIndex, Camera_eventFillRumMeter_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Code"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Camera.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Called to fill up the rum meter for a specific player."));
+#endif
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_ACamera_NoRegister()
 	{
 		return ACamera::StaticClass();
@@ -141,10 +170,12 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_States(States_StaticEnum
 				UObjectForceRegistration(OuterClass);
 				OuterClass->ClassFlags |= 0x20900080;
 
+				OuterClass->LinkChild(Z_Construct_UFunction_ACamera_FillRumMeter());
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 				UProperty* NewProp_camera = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("camera"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(camera, ACamera), 0x00400000000a001d, Z_Construct_UClass_UCameraComponent_NoRegister());
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ACamera_FillRumMeter(), "FillRumMeter"); // 2563861584
 				OuterClass->StaticLink();
 #if WITH_METADATA
 				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
@@ -692,6 +723,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 				UProperty* NewProp_levelZBoundary = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("levelZBoundary"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(levelZBoundary, ADiscoPirate), 0x0020080000000015);
 				UProperty* NewProp_levelYBoundary = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("levelYBoundary"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(levelYBoundary, ADiscoPirate), 0x0020080000000015);
 				UProperty* NewProp_rumBottleClass = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("rumBottleClass"), RF_Public|RF_Transient|RF_MarkAsNative) UClassProperty(CPP_PROPERTY_BASE(rumBottleClass, ADiscoPirate), 0x0024080000000015, Z_Construct_UClass_ARumBottle_NoRegister(), UClass::StaticClass());
+				UProperty* NewProp_uniquePlayerIndex = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("uniquePlayerIndex"), RF_Public|RF_Transient|RF_MarkAsNative) UIntProperty(CPP_PROPERTY_BASE(uniquePlayerIndex, ADiscoPirate), 0x0020080000000005);
 				UProperty* NewProp_attackBox = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("attackBox"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(attackBox, ADiscoPirate), 0x00400000000a001d, Z_Construct_UClass_UBoxComponent_NoRegister());
 				UProperty* NewProp_flipbook = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("flipbook"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(flipbook, ADiscoPirate), 0x00400000000a001d, Z_Construct_UClass_UPaperFlipbookComponent_NoRegister());
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
@@ -780,6 +812,9 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(NewProp_rumBottleClass, TEXT("Category"), TEXT("Code"));
 				MetaData->SetValue(NewProp_rumBottleClass, TEXT("ModuleRelativePath"), TEXT("DiscoPirate.h"));
 				MetaData->SetValue(NewProp_rumBottleClass, TEXT("ToolTip"), TEXT("Reference to the skvalp sound."));
+				MetaData->SetValue(NewProp_uniquePlayerIndex, TEXT("Category"), TEXT("Code"));
+				MetaData->SetValue(NewProp_uniquePlayerIndex, TEXT("ModuleRelativePath"), TEXT("DiscoPirate.h"));
+				MetaData->SetValue(NewProp_uniquePlayerIndex, TEXT("ToolTip"), TEXT("The player index."));
 				MetaData->SetValue(NewProp_attackBox, TEXT("AllowPrivateAccess"), TEXT("TRUE"));
 				MetaData->SetValue(NewProp_attackBox, TEXT("Category"), TEXT("Components"));
 				MetaData->SetValue(NewProp_attackBox, TEXT("EditInline"), TEXT("true"));
@@ -908,8 +943,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/DrunkenDiscoPirates")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x4B03427F;
-			Guid.B = 0xEE4F642B;
+			Guid.A = 0x2086E57C;
+			Guid.B = 0x391EB2D9;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

@@ -1,4 +1,4 @@
-// © Copyright Chrysalis Interactive 2017.
+// © Copyright Spoonvalley Interactive 2018.
 
 #pragma once
 
@@ -21,6 +21,9 @@ enum class States : uint8
 	Stunned,
 	JumpingAttacking
 };
+
+//Forward declarations.
+class ACamera;
 
 UCLASS()
 class DRUNKENDISCOPIRATES_API ADiscoPirate : public ACharacter
@@ -102,6 +105,13 @@ private:
 	void OnPickupBottleAudioFinished() { klunkAudio->Play(); skvalpAudio->Play(); }
 
 protected:
+
+	//Reference to the camera.
+	ACamera* camera;
+
+	//The player index.
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Code")
+	int32 uniquePlayerIndex;
 
 	//Reference to the skvalp sound.
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Code")
