@@ -1,7 +1,9 @@
-#Plox ignore .log files. ):
+#All files of these types please.
 *.log
 
-#Ignore intermediate and saved files!
+#Also, all files in these folders please!
+Unreal Project/DrunkenDiscoPirates/.vs/*
+Unreal Project/DrunkenDiscoPirates/enc_temp_folder/*
 Unreal Project/DrunkenDiscoPirates/Intermediate/*
 Unreal Project/DrunkenDiscoPirates/Saved/*
 
