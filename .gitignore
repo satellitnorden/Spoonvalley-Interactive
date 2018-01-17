@@ -1,11 +1,15 @@
 #All files of these types please.
+*.exp
 *.log
+*.pdb
+*.target
 
 #Also, all files in these folders please!
-Unreal Project/DrunkenDiscoPirates/.vs/*
-Unreal Project/DrunkenDiscoPirates/enc_temp_folder/*
-Unreal Project/DrunkenDiscoPirates/Intermediate/*
-Unreal Project/DrunkenDiscoPirates/Saved/*
+DrunkenDiscoPirates/.vs/*
+DrunkenDiscoPirates/enc_temp_folder/*
+DrunkenDiscoPirates/Intermediate/*
+DrunkenDiscoPirates/Saved/*
+
 
 #
 #	The below is stuff I grabbed from the Unreal Github repositry. I think it's a good starting point, but it might need some cleaning up.
