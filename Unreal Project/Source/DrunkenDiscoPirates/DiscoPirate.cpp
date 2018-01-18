@@ -149,6 +149,30 @@ void ADiscoPirate::InitiateJump()
 	}
 }
 
+//Toggles pause.
+void ADiscoPirate::TogglePause()
+{
+	camera->TogglePause(uniquePlayerIndex);
+}
+
+//Move up UI.
+void ADiscoPirate::MoveUpUI()
+{
+	camera->MoveUpUI(uniquePlayerIndex);
+}
+
+//Move down UI.
+void ADiscoPirate::MoveDownUI()
+{
+	camera->MoveDownUI(uniquePlayerIndex);
+}
+
+//On select UI.
+void ADiscoPirate::OnSelectUI()
+{
+	camera->OnSelectUI(uniquePlayerIndex);
+}
+
 //Called on begin overlap.
 void ADiscoPirate::OnBeginOverlap(UPrimitiveComponent *OverlappedComponent, AActor *OtherActor, UPrimitiveComponent *OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult &SweepResult)
 {
@@ -429,6 +453,10 @@ void ADiscoPirate::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 	PlayerInputComponent->BindAxis("Movement", this, &ADiscoPirate::MoveVertical);
 	PlayerInputComponent->BindAction("Attack", EInputEvent::IE_Pressed, this, &ADiscoPirate::InitiateAttack);
 	PlayerInputComponent->BindAction("Jump", EInputEvent::IE_Pressed, this, &ADiscoPirate::InitiateJump);
+	PlayerInputComponent->BindAction("Pause", EInputEvent::IE_Pressed, this, &ADiscoPirate::TogglePause);
+	PlayerInputComponent->BindAction("Move Up", EInputEvent::IE_Pressed, this, &ADiscoPirate::MoveUpUI);
+	PlayerInputComponent->BindAction("Move Down", EInputEvent::IE_Pressed, this, &ADiscoPirate::MoveDownUI);
+	PlayerInputComponent->BindAction("Select", EInputEvent::IE_Pressed, this, &ADiscoPirate::OnSelectUI);
 }
 
 //Called when pirate has picked up rum.

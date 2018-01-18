@@ -1,0 +1,3 @@
+C:\Users\Dennis\Documents\GitHub\Spoonvalley-Interactive\Unreal Project\Source\DrunkenDiscoPirates\DrunkenDiscoPirates.Build.cs
+C:\Users\Dennis\Documents\GitHub\Spoonvalley-Interactive\Unreal Project\Source\DrunkenDiscoPirates.Target.cs
+C:\Users\Dennis\Documents\GitHub\Spoonvalley-Interactive\Unreal Project\Source\DrunkenDiscoPiratesEditor.Target.cs

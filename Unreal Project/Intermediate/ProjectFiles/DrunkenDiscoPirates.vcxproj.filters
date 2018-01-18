@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<None Include="..\..\DrunkenDiscoPirates.uproject" />
+		<Filter Include="Source">
+			<UniqueIdentifier>{A0BA852E-FAAA-4EBB-B8F9-D37424E0703D}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\DrunkenDiscoPirates.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<None Include="..\..\Source\DrunkenDiscoPiratesEditor.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<Filter Include="Config">
+			<UniqueIdentifier>{B4A50BB6-AD37-4BC7-AC4D-87BF49BE9352}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Config\DefaultEditor.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEngine.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultGame.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultInput.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\desktop.ini">
+			<Filter>Config</Filter>
+		</None >
+		<Filter Include="Source\DrunkenDiscoPirates">
+			<UniqueIdentifier>{6DAB5629-45C0-433C-97F1-E9A08E0CDE1B}</UniqueIdentifier>
+		</Filter>
+		<ClCompile Include="..\..\Source\DrunkenDiscoPirates\AnimatedImage.cpp">
+			<Filter>Source\DrunkenDiscoPirates</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\DrunkenDiscoPirates\AnimatedImage.h">
+			<Filter>Source\DrunkenDiscoPirates</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\DrunkenDiscoPirates\Camera.cpp">
+			<Filter>Source\DrunkenDiscoPirates</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\DrunkenDiscoPirates\Camera.h">
+			<Filter>Source\DrunkenDiscoPirates</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\DrunkenDiscoPirates\DDPGameInstance.cpp">
+			<Filter>Source\DrunkenDiscoPirates</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\DrunkenDiscoPirates\DDPGameInstance.h">
+			<Filter>Source\DrunkenDiscoPirates</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\DrunkenDiscoPirates\DDPGameMode.cpp">
+			<Filter>Source\DrunkenDiscoPirates</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\DrunkenDiscoPirates\DDPGameMode.h">
+			<Filter>Source\DrunkenDiscoPirates</Filter>
+		</ClInclude >
+		<None Include="..\..\Source\DrunkenDiscoPirates\desktop.ini">
+			<Filter>Source\DrunkenDiscoPirates</Filter>
+		</None >
+		<ClCompile Include="..\..\Source\DrunkenDiscoPirates\DiscoPirate.cpp">
+			<Filter>Source\DrunkenDiscoPirates</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\DrunkenDiscoPirates\DiscoPirate.h">
+			<Filter>Source\DrunkenDiscoPirates</Filter>
+		</ClInclude >
+		<None Include="..\..\Source\DrunkenDiscoPirates\DrunkenDiscoPirates.Build.cs">
+			<Filter>Source\DrunkenDiscoPirates</Filter>
+		</None >
+		<ClCompile Include="..\..\Source\DrunkenDiscoPirates\DrunkenDiscoPirates.cpp">
+			<Filter>Source\DrunkenDiscoPirates</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\DrunkenDiscoPirates\DrunkenDiscoPirates.h">
+			<Filter>Source\DrunkenDiscoPirates</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\DrunkenDiscoPirates\DrunkenDiscoPiratesGameModeBase.cpp">
+			<Filter>Source\DrunkenDiscoPirates</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\DrunkenDiscoPirates\DrunkenDiscoPiratesGameModeBase.h">
+			<Filter>Source\DrunkenDiscoPirates</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\DrunkenDiscoPirates\RumBottle.cpp">
+			<Filter>Source\DrunkenDiscoPirates</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\DrunkenDiscoPirates\RumBottle.h">
+			<Filter>Source\DrunkenDiscoPirates</Filter>
+		</ClInclude >
+	</ItemGroup>
+</Project>

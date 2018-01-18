@@ -10,12 +10,6 @@ class DRUNKENDISCOPIRATES_API ACamera : public APawn
 {
 	GENERATED_BODY()
 
-private:
-
-	//The camera component.
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = true), Category = "Components")
-	UCameraComponent *camera;
-
 public:
 
 	//Default constructor.
@@ -33,5 +27,37 @@ public:
 	//Called to fill up the rum meter for a specific player.
 	UFUNCTION(BlueprintImplementableEvent, Category = "Code")
 	void FillRumMeter(int32 playerIndex, float deltaTime);
+
+	//On pause.
+	UFUNCTION(BlueprintImplementableEvent, Category = "Code")
+	void TogglePause(int32 playerIndex);
+
+	//Move up UI.
+	UFUNCTION(BlueprintImplementableEvent, Category = "Code")
+	void MoveUpUI(int32 playerIndex);
+
+	//Move down UI.
+	UFUNCTION(BlueprintImplementableEvent, Category = "Code")
+	void MoveDownUI(int32 playerIndex);
+
+	//On select UI.
+	UFUNCTION(BlueprintImplementableEvent, Category = "Code")
+	void OnSelectUI(int32 playerIndex);
+
+protected:
+
+	//Defines whether or not the game is paused.
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Code")
+	bool isPaused;
+
+	//The index of the player that has currently paused the game.
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Code")
+	int32 currentlyPausedPlayerIndex;
+
+private:
+
+	//The camera component.
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = true), Category = "Components")
+	UCameraComponent *camera;
 
 };

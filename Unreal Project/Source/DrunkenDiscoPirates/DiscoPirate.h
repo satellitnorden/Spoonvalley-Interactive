@@ -44,6 +44,18 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Code")
 	void InitiateJump();
 
+	//Toggles pause.
+	void TogglePause();
+
+	//Move up UI.
+	void MoveUpUI();
+
+	//Move down UI.
+	void MoveDownUI();
+
+	//On select UI.
+	void OnSelectUI();
+
 private:
 
 	//The paper flipbook component.
